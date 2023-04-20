@@ -1,2 +1,2 @@
-# Desarollo Parcial Final Segundo Tercio
-Daniel Santiago Gomez Zabala
+# lab08
+sebastian porras
