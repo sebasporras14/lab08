@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+    <title>Login page</title>
+</h:head>
+<h:body>
+    <div class="login">
+        <div class="login-screen">
+            <div class="app-title">
+                <h1>Login</h1>
+            </div>
+
+            <h:form class="login-form">
+                <div class="control-group">
+                    <p:inputText class="login-field" value="#{userBean.user}" placeholder="Nombre de usuario" id="login-name"/>
+                </div>
+
+                <div class="control-group">
+                    <p:password class="login-field" value="#{userBean.password}" placeholder="Contraseña" id="login-pass"/>
+                </div>
+                <p:commandButton class="btn btn-primary btn-large btn-block" action="#{userBean.login()}" value="ingresar" id="confirm" update="@all"/>
+                <h:messages style="color:red"/>
+            </h:form>
+        </div>
+    </div>
+</h:body>
+</html>

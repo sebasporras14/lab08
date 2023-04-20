@@ -62,8 +62,8 @@ public class UserBean  implements Serializable {
     @Bean
     public CommandLineRunner currentUser() throws Exception{
         return args -> {
-            userService.addUsuario(new User("admin", "xdsrewq"));
-            userService.addUsuario(new User("Daniel Santiago Gomez Zabala", "1002727190"));
+            userService.addUsuario(new User("admin", "hola123"));
+            userService.addUsuario(new User("sebastian porras rozo", "1014308142"));
             userService.getAllUsuario().forEach(System.out::println);
         };
     }
